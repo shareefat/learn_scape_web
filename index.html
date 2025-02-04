@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN SCAPE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LEARN SCAPE</h1>
+        <img src="image/LS branding p.png" alt="LS" style="width: 200px;height: auto;">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-container">
+            <div class="course">
+                <h3>Python Programming</h3>
+                <p>At Learn Scape, our Python course is designed to take you from basic syntax to advanced concepts, with hands-on projects that prepare you for real-world applications.</p>
+            </div>
+            <div class="course">
+                <h3>C Programming</h3>
+                <p>At Learn Scape, our C programming course takes you from fundamentals to advanced concepts, helping you build a strong coding foundation with practical exercises and real-world projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Learn Scape, your gateway to mastering the world of coding! We are an innovative online code school dedicated to empowering learners with hands-on programming skills in Python, C, and beyond. Whether you're a beginner or an aspiring developer, our interactive courses, expert-led guidance, and real-world projects will help you build a strong foundation in programming.
+
+            At Learn Scape, we believe in learning by doing. Our curriculum is designed to be engaging, practical, and industry-relevant, ensuring that you not only understand coding concepts but also apply them to real-world problems.
+           <br>
+           🚀 Why Choose Learn Scape?<br>  
+            ✔ Beginner-friendly courses<br>
+            ✔ Hands-on coding exercises<br>
+            ✔ Expert mentors and community support<br>
+            ✔ Flexible online learning <br>
+            <br>
+            <br>
+            Join Learn Scape today and take the first step towards becoming a skilled code</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f0977c27-6a36-4c77-8b9a-1583495ee193">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="'phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="Python Programming">Python Programming</option>
+                <option value="C Programming">C Programming</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="confirmationMessage" style="display:none; color: #ff9800;">Your message has been sent!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Learn Scape. All rights reserved.</p>
+    </footer>
+</body>
+</html>
